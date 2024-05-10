@@ -1,0 +1,63 @@
+:root{
+    --primarycolor: rgb(229, 9, 20);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+section {
+    /* position: relative; */
+}
+
+nav{
+    position: absolute;
+    top: 2px;
+    left: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;   
+    /* filter: drop-shadow(20px 30px 30px black); */
+}
+nav .logo{
+    object-fit: contain;
+    object-position: center center;
+    height: 125px;
+    transform: translateX(-380px);
+    /* transform: translateY(-25px); */
+}
+.right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    transform: translateX(260px);
+}
+select{
+    border-radius: 2px;
+    padding: 0.25rem 1rem;
+    min-height: 2rem;
+    cursor: pointer;
+    font-size: 15px;
+    background: transparent;
+    font: inherit;
+    /* font-weight: 500; */
+    color: white;
+}
+.first button{
+    background-color: var(--primarycolor);
+    padding: 0.25rem 1rem;
+    min-height: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.box{
+    background-image: url('assets/Netflix-Background.jpg');
+    height: 110vh;
+    /* filter: brightness(0.5) ; */
+}
