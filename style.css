@@ -8,9 +8,12 @@
 }
 section {
     /* position: relative; */
+    background-image: url('assets/Netflix-Background.jpg');
+    height: 110vh;
 }
 
 nav{
+    backdrop-filter: brightness(30%);
     position: absolute;
     top: 2px;
     left: 500px;
@@ -56,8 +59,13 @@ select{
     color: white;
     border: none;
 }
-.box{
-    background-image: url('assets/Netflix-Background.jpg');
-    height: 110vh;
-    /* filter: brightness(0.5) ; */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstline{
+
 }
