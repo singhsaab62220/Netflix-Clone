@@ -74,3 +74,8 @@ select{
 .firstline{
 
 }
+.second .background{
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+}
