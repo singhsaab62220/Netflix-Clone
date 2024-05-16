@@ -1,9 +1,12 @@
 :root{
     --primarycolor: rgb(229, 9, 20);
+    --secondarycolor: rgb(24, 24, 24);
 }
 *{
     margin: 0;
     padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
 }
 .main{
     background-image: url(assets/Netflix-Background.jpg);
@@ -11,19 +14,24 @@
     width: 100%;
     position: relative;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    /* background-size: 100vw; */
+    
 }
 .main .box{
     height: 110vh;
     width: 100%;
-    opacity: .5;
+    opacity: .7;
     background-color: black;
     position: absolute;
     top: 0%;
+    background-size: max(1200px,100vw);
 }
 nav{
     display: flex;
-    padding: 20px;
-    max-width: 78vw;
+    padding: 22px;
+    max-width: 76vw;
     margin: auto;
     /* background-color: antiquewhite; */
     justify-content: space-between;
@@ -38,17 +46,7 @@ nav{
     gap: 20px;
     display: flex;
 }
-.main .right .language{
-    padding: 0.25rem 1rem;
-    min-height: 2rem;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 0.875rem;
-    border-radius: 5px;
-    color: white;
-    border: 2px solid white;
-    background: none;
-}
+
 .main .right .SignIn{
     background-color: var(--primarycolor);
     padding: 0.25rem 1rem;
@@ -59,4 +57,79 @@ nav{
     border-radius: 5px;
     color: white;
     border: none;
+}
+.right .lang select{
+    /* padding: 0.25rem 1rem; */
+    min-height: 2rem;
+    cursor: pointer;
+    font-size: 15px;
+    background: transparent;
+    font: inherit;
+    border: transparent;
+    color: white;
+}
+.right .lang{
+    border-radius: 5px;
+    border: .5px solid grey;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    height: 10px;
+    font-weight: 600;
+    font-size: large;
+}
+.main .content{
+    position: relative;
+    /* z-index: 15; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+    gap: 20px;
+}
+.main .content .firstline{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 50px;
+    font-weight: 750;
+}
+.main .content .secondline{
+    font-size: 25px;
+    font-weight: 400;
+}
+.main .content .thirdline{
+    font-size: 20px;
+    font-weight: 500;
+}
+.main .content .getstarted{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.getstarted button{
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.getstarted input{
+    background-color: var(--secondarycolor);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    opacity: .6;
+
 }

@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="main">
         <nav>
             <div class="logo">
-                <img src="assets/logo.svg" alt="logo">
+                <img src="assets/logo.svg" alt="logo" />
             </div>
             <div class="right">
-                <button class="language">English</button>
+                <div class="lang">
+                    <div>
+                        <img src="assets/language.svg" alt="" />
+                    </div>
+                    <div>
+                        <select name="language">
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                        </select>
+                    </div>
+                </div>
                 <button class="SignIn">Sign In</button>
             </div>
         </nav>
-
-    <div class="box"></div>
+        <div class="box"></div>
+        <div class="content">
+            <span class="firstline">Unlimited movies, TV shows and more</span>
+            <span class="secondline">Watch anywhere. Cancel anytime.</span>
+            <span class="thirdline">Ready to watch? Enter your email or mobile number to create or
+                restart your membership.</span>
+            <span class="getstarted">
+                <input type="text">
+                <button class="getstarted">Get Started <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></button>
+            </span>
+        </div>
 
     </div>
 </body>
+
 </html>
