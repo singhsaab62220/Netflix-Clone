@@ -1,12 +1,19 @@
 :root{
     --primarycolor: rgb(229, 9, 20);
-    --secondarycolor: rgb(24, 24, 24);
+    --secondarycolor: rgb(41, 41, 41);
 }
 *{
     margin: 0;
     padding: 0;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-
+    
+    
+}
+body{
+    background-color: var(--secondarycolor);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 .main{
     background-image: url(assets/Netflix-Background.jpg);
@@ -17,6 +24,7 @@
     background-repeat: no-repeat;
     background-size: max(1200px,100vw);
     /* background-size: 100vw; */
+    
     
 }
 .main .box{
@@ -53,7 +61,8 @@ nav{
     min-height: 2rem;
     cursor: pointer;
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 14px;
+    font-weight: 700;
     border-radius: 5px;
     color: white;
     border: none;
@@ -132,4 +141,59 @@ nav{
     font-size: 25px;
     opacity: .6;
 
+}
+.section2{
+    background-color: black;
+    height: 80vh;
+    width: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.section2 .left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 35vw;
+}
+.section2 .left .firstline{
+    font-size: 50px;
+    font-weight: 900;
+}
+.section2 .left .secondline{
+    font-size: 25px;
+    font-weight: 400;
+}
+.section2 .right .image img{
+    height: 380px;
+    background: url("assets/section2.m4v");
+}
+.section2 .right{
+    /* height: 60vh;
+    max-width: 40vw; */
+    /* background-color: aqua; */
+    background: url("assets/section2.m4v");
+}
+.section2 .right .video{
+    position: absolute;
+    /* top: 50px; */
+    bottom: 50px;
+    right: 250px;
+
+}
+.section2 .right .video video{
+    height: 200px;
+}
+
+.section3{
+    background-color: black;
+    height: 80vh;
+    width: auto;
+}
+.section4{
+    background-color: black;
+    height: 80vh;
+    width: auto;
 }
