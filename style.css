@@ -266,10 +266,33 @@ nav{
     background-color: black;
     height: 65vh;
     width: auto;
-    color: white;
+    color: rgb(150, 150, 150);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+ 
+}
+.footer .link{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 50vw;
+    margin: auto;
+}
+.footer .links{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    column-count: 3;
+}
+.footer ul li{
+    list-style: none;
+
+}
+.footer ul li a:link {
+    color: rgb(150, 150, 150);
 }
 
 
