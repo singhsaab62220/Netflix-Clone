@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
   </head>
 
   <body>
@@ -71,15 +72,24 @@
       <div class="right">
         <div class="image">
           <img src="assets/section2_tv.png" alt="" />
+          <video src="assets/section2.m4v" autoplay muted></video> 
         </div>
-        <div class="video">
-          <!-- <video src="assets/section2.m4v"></video>  -->
-        </div>
+
       </div>
     </div>
     <div class="section3">
       <div class="left">
         <img src="assets/section3.jpg" alt="" />
+        <div class="box">
+          <img src="assets/section3_box.png" alt="">
+          <div class="text">
+            <div class="first" style="font-weight: 500;">Stranger Things</div>
+            <div class="second" style="color: rgb(0, 102, 255); font-size: 14px;">Downloading...</div>
+          </div>
+          <div class="downloading">
+            <img src="assets/download-icon.gif" alt="">
+          </div>
+        </div>
       </div>
       <div class="right">
         <span class="firstline"> Download your shows to watch offline </span>
@@ -101,7 +111,7 @@
           <img src="assets/section4.png" alt="" />
         </div>
         <div class="video">
-          <!-- <video src="assets/section2.m4v"></video>  -->
+          <video src="assets/section3.m4v" autoplay muted loop></video> 
         </div>
       </div>
     </div>
@@ -194,15 +204,16 @@
       </div>
     </div>
     <div class="footer">
+      <span>
+        Questions? Call <a href="www.netflix.com">  000-800-919-1694</a></li>
+      </span>
+
         <div class="link">
-            <ul class="Call">
-                <li>Questions? Call <a href="www.netflix.com">  000-800-919-1694</a></li>
-            </ul>
             <ul class="links">
                 <li><a href="www.netflix.com"> FAQ </a></li>
                 <li><a href="www.netflix.com"> Help Centre </a></li>
                 <li><a href="www.netflix.com"> Account </a></li>
-                <li><a href="www.netflix.com"> Media Centre </a></li>
+                <li><a href="www.netflix.com"> Media Centre </a></li>   
                 <li><a href="www.netflix.com"> Investor Relations </a></li>
                 <li><a href="www.netflix.com"> Jobs </a></li>
                 <li><a href="www.netflix.com"> Ways to Watch </a></li>
@@ -216,7 +227,21 @@
                 <li><a href="www.netflix.com"> Only on Netflix </a></li>
             </ul>
         </div>
+        <div class="lang">
+          <div>
+            <img src="assets/language.svg" alt="" />
+          </div>
+          <div>
+            <select name="language">
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+            </select>
+          </div>
+        </div>
+        <span class="origin">Netflix India</span>
     </div>
+
+    
   </body>
   </html>
   
