@@ -400,10 +400,10 @@ nav{
         justify-content: center;
         align-items: center;
     } */
-    .main .content .firstline{
+    .main .content .firstline, .section2 .left .firstline{
         font-size: 2rem;
     }
-    .main .content .secondline{
+    .main .content .secondline, .section2 .left .secondline{
         font-size: 1rem;
     }
     .main .content .thirdline{
@@ -421,14 +421,32 @@ nav{
         height: 2rem;
         width: 10rem;
         font-size: small;
-    /* }
+    }
     body{
         
     }
-    .section2, .section3, .section4, .section5{
+    .section2{
         display: flex;
         flex-direction: column;
-        max-height: fit-content;
+        height: 40rem;
+        gap: 0px;
     }
-     */
+    .section2 .left{
+        max-width: 90%;
+        text-align: center;
+    }
+    .section2 .right .image img{
+        width: 555px;
+    }
+    .section2 .right .image video{
+        width: 400px;
+        top: 42rem;
+        left: 13rem;
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        gap: 0px;
+    }
 } 
